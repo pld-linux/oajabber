@@ -70,7 +70,7 @@ Statyczne biblioteki oajabber.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure --with-apr=%{_bindir} --with-apr-util=%{_bindir} 	--with-oapu=%{_bindir}
+%configure --with-apr=%{_bindir}/apr-1-config --with-apr-util=%{_bindir}/apu-1-config 	--with-oapu=%{_bindir}
 
 %{__make} \
 	CXXFLAGS="%{rpmcflags}"
