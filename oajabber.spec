@@ -6,8 +6,7 @@ Name:		oajabber
 Version:	%{_snap}
 Release:	0.1
 Epoch:		0
-#TODO: check this
-License:	GPL
+License:	LGPL
 Group:		Libraries
 Source0:	http://www.lukasz.mach.com.pl/oa-core-%{version}.tar.bz2
 # Source0-md5:	ef352ff310d3cb091fafeae879f034a4
