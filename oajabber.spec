@@ -12,16 +12,16 @@ Source0:	http://www.lukasz.mach.com.pl/oa-core-%{version}.tar.bz2
 # Source0-md5:	ef352ff310d3cb091fafeae879f034a4
 Patch0:		%{name}-apr_includes.patch
 URL:		http://gen.openaether.org/
-BuildRequires:	oapr-devel
-BuildRequires:	apr-util-devel
-BuildRequires:	xerces-c-devel
-BuildRequires:	zlib-devel
+BuildRequires:	apr-util-devel >= 1:1.0.0
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	boost-python-devel
 BuildRequires:	boost-conversion-devel
 BuildRequires:	boost-utility-devel
 BuildRequires:	libtool >= 2:1.4d-3
+BuildRequires:	oapr-devel
+BuildRequires:	xerces-c-devel
+BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -39,7 +39,7 @@ Summary:	Header files for oajabber library
 Summary(pl):	Pliki nag³ówkowe biblioteki oajabber
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-Requires:	apr-devel
+Requires:	apr-devel >= 1:1.0.0
 Requires:	boost-utility-devel
 
 %description devel
@@ -70,7 +70,10 @@ Statyczne biblioteki oajabber.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure --with-apr=%{_bindir}/apr-1-config --with-apr-util=%{_bindir}/apu-1-config 	--with-oapu=%{_bindir}
+%configure \
+	--with-apr=%{_bindir}/apr-1-config \
+	--with-apr-util=%{_bindir}/apu-1-config \
+ 	--with-oapu=%{_bindir}
 
 %{__make} \
 	CXXFLAGS="%{rpmcflags}"
