@@ -1,0 +1,11 @@
+--- framework/tests/Makefile.am~	2003-12-31 08:18:06.000000000 +0100
++++ framework/tests/Makefile.am	2004-09-13 19:14:57.565326728 +0200
+@@ -11,7 +11,7 @@
+ # to go back to old way, go to 1.24
+ include $(top_srcdir)/config/config.mk
+ 
+-INCLUDES = -I$(top_srcdir) -I$(XERCES_IDIR) -I$(boost_inc) @oapr_includes@ @oapu_includes@
++INCLUDES = -I$(top_srcdir) -I$(XERCES_IDIR) -I$(boost_inc) @oapr_includes@ @oapu_includes@ @apu_includes@ @apr_includes@
+ OAPRLIB=@oapr_ldlink@ @oapr_libs@  @oapu_ldlink@ @oapu_libs@
+ 
+ bin_PROGRAMS = testDomBuilder \
