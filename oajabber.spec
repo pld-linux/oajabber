@@ -1,7 +1,7 @@
-%define _snap 20040902
+%define	_snap	20040902
 
-Summary:	portable, flexible c++ jabber/xmpp library
-Summary(pl):	przeno¶na, elastyczna biblioteka jabber/xmpp dla c++.
+Summary:	Portable, flexible C++ Jabber/XMPP library
+Summary(pl):	Przeno¶na, elastyczna biblioteka Jabbera/XMPP dla C++
 Name:		oajabber
 Version:	%{_snap}
 Release:	0.1
@@ -26,11 +26,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 C++ library for the XMPP/Jabber protocol. It is designed to be
-portable and flexible. It aims to be the most complete c++ XMPP/Jabber
+portable and flexible. It aims to be the most complete C++ XMPP/Jabber
 implementation.
 
 %description -l pl
-Biblioteka c++ obs³uguj±c± protokó³ XMPP/Jabber, przeno¶na i
+Biblioteka C++ obs³uguj±c± protokó³ XMPP/Jabber, przeno¶na i
 elastyczna. Celem jest zapewnienie najbardziej kompletnej
 implementacji XMPP/Jabber dla C++.
 
@@ -73,7 +73,6 @@ Statyczne biblioteki oajabber.
 
 %{__make} \
 	CXXFLAGS="%{rpmcflags}"
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
