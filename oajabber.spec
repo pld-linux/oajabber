@@ -1,4 +1,4 @@
-%define	_snap	20040902
+%define _snap 20040913
 
 Summary:	Portable, flexible C++ Jabber/XMPP library
 Summary(pl):	Przeno¶na, elastyczna biblioteka Jabbera/XMPP dla C++
@@ -10,7 +10,8 @@ Epoch:		0
 License:	GPL
 Group:		Libraries
 Source0:	http://www.lukasz.mach.com.pl/oa-core-%{version}.tar.bz2
-# Source0-md5:	c8ee48c600e1b51b730e8cbbd8fe2e87
+# Source0-md5:	ef352ff310d3cb091fafeae879f034a4
+Patch0:		%{name}-apr_includes.patch
 URL:		http://gen.openaether.org/
 BuildRequires:	oapr-devel
 BuildRequires:	apr-util-devel
@@ -62,6 +63,7 @@ Statyczne biblioteki oajabber.
 
 %prep
 %setup -q -n oa-core-%{_snap}
+%patch0 -p0
 
 %build
 %{__libtoolize}
@@ -69,7 +71,7 @@ Statyczne biblioteki oajabber.
 %{__autoconf}
 %{__autoheader}
 %{__automake}
-%configure --with-apr=%{_bindir} --with-apu=%{_bindir} 	--with-oapu=%{_bindir}
+%configure --with-apr=%{_bindir} --with-apr-util=%{_bindir} 	--with-oapu=%{_bindir}
 
 %{__make} \
 	CXXFLAGS="%{rpmcflags}"
