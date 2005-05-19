@@ -16,10 +16,9 @@ BuildRequires:	apr-util-devel >= 1:1.0.0
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	boost-python-devel
-BuildRequires:	boost-conversion-devel
-BuildRequires:	boost-utility-devel
 BuildRequires:	libtool >= 2:1.4d-3
 BuildRequires:	oapr-devel
+BuildRequires:	which
 BuildRequires:	xerces-c-devel
 BuildRequires:	zlib-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
