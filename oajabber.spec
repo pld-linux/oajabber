@@ -8,7 +8,7 @@ Release:	0.1
 Epoch:		0
 License:	LGPL
 Group:		Libraries
-Source0:	http://www.lukasz.mach.com.pl/oa-core-%{version}.tar.bz2
+Source0:	oa-core-%{version}.tar.bz2
 # Source0-md5:	ef352ff310d3cb091fafeae879f034a4
 Patch0:		%{name}-apr_includes.patch
 URL:		http://gen.openaether.org/
