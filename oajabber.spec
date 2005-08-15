@@ -11,7 +11,7 @@ Group:		Libraries
 Source0:	oa-core-%{version}.tar.bz2
 # Source0-md5:	ef352ff310d3cb091fafeae879f034a4
 Patch0:		%{name}-apr_includes.patch
-URL:		http://gen.openaether.org/
+URL:		http://gen.openaether.org/oajabber.html
 BuildRequires:	apr-util-devel >= 1:1.0.0
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
