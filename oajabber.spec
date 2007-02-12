@@ -1,7 +1,7 @@
 %define _snap 20040913
 
 Summary:	Portable, flexible C++ Jabber/XMPP library
-Summary(pl):	Przeno∂na, elastyczna biblioteka Jabbera/XMPP dla C++
+Summary(pl.UTF-8):   Przeno≈õna, elastyczna biblioteka Jabbera/XMPP dla C++
 Name:		oajabber
 Version:	%{_snap}
 Release:	0.1
@@ -28,14 +28,14 @@ C++ library for the XMPP/Jabber protocol. It is designed to be
 portable and flexible. It aims to be the most complete C++ XMPP/Jabber
 implementation.
 
-%description -l pl
-Biblioteka C++ obs≥uguj±c± protokÛ≥ XMPP/Jabber, przeno∂na i
+%description -l pl.UTF-8
+Biblioteka C++ obs≈ÇugujƒÖcƒÖ protok√≥≈Ç XMPP/Jabber, przeno≈õna i
 elastyczna. Celem jest zapewnienie najbardziej kompletnej
 implementacji XMPP/Jabber dla C++.
 
 %package devel
 Summary:	Header files for oajabber library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki oajabber
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki oajabber
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	apr-devel >= 1:1.0.0
@@ -44,19 +44,19 @@ Requires:	boost-utility-devel
 %description devel
 Header files for oajabber libraries.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki oajabber.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki oajabber.
 
 %package static
 Summary:	Static oajabber libraries
-Summary(pl):	Statyczne biblioteki oajabber
+Summary(pl.UTF-8):   Statyczne biblioteki oajabber
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
 %description static
 Static oajabber libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne biblioteki oajabber.
 
 %prep
