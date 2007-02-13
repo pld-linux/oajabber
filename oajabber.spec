@@ -1,7 +1,7 @@
 %define _snap 20040913
 
 Summary:	Portable, flexible C++ Jabber/XMPP library
-Summary(pl.UTF-8):   Przenośna, elastyczna biblioteka Jabbera/XMPP dla C++
+Summary(pl.UTF-8):	Przenośna, elastyczna biblioteka Jabbera/XMPP dla C++
 Name:		oajabber
 Version:	%{_snap}
 Release:	0.1
@@ -35,7 +35,7 @@ implementacji XMPP/Jabber dla C++.
 
 %package devel
 Summary:	Header files for oajabber library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki oajabber
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki oajabber
 Group:		Development/Libraries
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	apr-devel >= 1:1.0.0
@@ -49,7 +49,7 @@ Pliki nagłówkowe biblioteki oajabber.
 
 %package static
 Summary:	Static oajabber libraries
-Summary(pl.UTF-8):   Statyczne biblioteki oajabber
+Summary(pl.UTF-8):	Statyczne biblioteki oajabber
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{epoch}:%{version}-%{release}
 
