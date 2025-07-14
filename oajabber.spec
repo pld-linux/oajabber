@@ -61,7 +61,7 @@ Statyczne biblioteki oajabber.
 
 %prep
 %setup -q -n oa-core-%{_snap}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__libtoolize}
